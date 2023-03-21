@@ -19,5 +19,7 @@ for tr in table.tbody.find_all('tr'):
         row.append(td.text.strip())
     rows.append(row)
 
-for row in rows:
-    print(row)
+#for row in rows:
+ #   print(row)
+df = pd.DataFrame(rows)
+df.to_csv('Assignment1b.csv')
